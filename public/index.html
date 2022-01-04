@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SocketApp</title>
+    <script src="/socket.io/socket.io.js"></script>
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+    <div class="App">
+      <div class="game_start">
+        <h1>Tic-Tac-Toe</h1><hr><br>
+        <h3>Create New Game</h3>
+        <input class="name" placeholder="Enter your name" ><br><br>
+        <button class="new_game" onclick="new_game()">New Game</button><br><br><br>
+        <h3>Join Game </h3><br>
+        <input class="name1" placeholder="Enter your name"><br><br>
+        <input class="room_id" placeholder="Enter valid room_id"><br><br>
+        <button class="join_game"onclick="join_game()">Join game</button>
+    </div>
+    <div class="game_screen"></div>
+  </div>
+  <script src="./main.js"></script>
+</body>
+</html>
